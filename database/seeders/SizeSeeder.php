@@ -16,7 +16,7 @@ class SizeSeeder extends Seeder
     {
         Size::truncate();
 
-        $sizes = [34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44];
+        $sizes = ['S', 'M', 'L', 'XL', 'XXL'];
 
         foreach ($sizes as $size) {
             Size::create([

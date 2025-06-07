@@ -7,7 +7,7 @@ return [
     'actions' => 'Hành động',
     'name' => 'Tên',
     'create_account' => 'Tạo tài khoản',
-    'login_title' => 'Đăng nhập vào Shoe Addict',
+    'login_title' => 'Đăng nhập vào Ladie Dress',
     'new_here' => 'Chưa có tài khoản?',
     'password' => 'Mật khẩu',
     'continue' => 'Tiếp tục',
@@ -137,4 +137,5 @@ return [
     'my_account' => 'Tài khoản',
     'filter' => 'Bộ lọc',
     'paypal_paid' => 'Thanh toán qua Paypal',
+    'update_user' => 'Chỉnh sửa tài khoản người dùng'
 ];

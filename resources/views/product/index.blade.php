@@ -115,7 +115,7 @@
                                         <!--end::Category=-->
                                         <!--begin::Qty=-->
                                         <td class="pe-0" data-order="29">
-                                            <span class="fw-bolder ms-3">{{ $product->brand->name }}</span>
+                                            <span class="fw-bolder ms-3">{{ $product->brand?->name }}</span>
                                         </td>
                                         <!--end::Qty=-->
                                         <!--begin::Price=-->

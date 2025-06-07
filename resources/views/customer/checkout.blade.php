@@ -27,7 +27,7 @@
                                                     <form id="checkout-form" method="POST"
                                                           action="{{ route('orders.store') }}">
                                                         @csrf
-                                                        <input type="hidden" name="total_usd" value="{{ $totalUSD }}">
+{{--                                                        <input type="hidden" name="total_usd" value="{{ $totalUSD }}">--}}
                                                         <div class="col-md-6 col-xs-12">
                                                             <div class="billing-details checkout-payment-area"
                                                                  style="background:white;">
@@ -144,10 +144,10 @@
                                                                                             <input type="radio" id="pay-toggle03" name="pay_method" value="COD" checked>
                                                                                             <label for="pay-toggle03">Thanh toán khi nhận hàng</label>
                                                                                         </div>
-                                                                                        <div class="pay-type">
-                                                                                            <input type="radio" id="pay-toggle04" name="pay_method" value="PAYPAL">
-                                                                                            <label for="pay-toggle04">Thanh toán qua Paypal</label>
-                                                                                        </div>
+{{--                                                                                        <div class="pay-type">--}}
+{{--                                                                                            <input type="radio" id="pay-toggle04" name="pay_method" value="PAYPAL">--}}
+{{--                                                                                            <label for="pay-toggle04">Thanh toán qua Paypal</label>--}}
+{{--                                                                                        </div>--}}
                                                                                     </div>
                                                                                     <div class="input-box" style="margin-top:15px;">
                                                                                         <a id="order-btn" class="btn-def btn2" href="#">

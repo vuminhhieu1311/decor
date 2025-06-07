@@ -167,8 +167,7 @@
                                                         <div class="symbol symbol-circle symbol-25px overflow-hidden me-3">
                                                             <a>
                                                                 <div class="symbol-label">
-                                                                    <img
-                                                                        src="{{ Avatar::create($order->user->name)->toBase64() }}" />
+                                                                    <img src="https://ui-avatars.com/api/?background=random&color=fff&name={{ urlencode($order->user->name) }}&rounded=true" />
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -331,7 +330,7 @@
                                         <!--end::Table head-->
                                         <!--begin::Table body-->
                                         <tbody class="fw-bold text-gray-600">
-                                            @foreach ($order->productVariants as $item)
+                                            @foreach ($order->products as $item)
                                                 <!--begin::Products-->
                                                 <tr>
                                                     <!--begin::Product-->
@@ -340,25 +339,22 @@
                                                             <!--begin::Thumbnail-->
                                                             <a href="" class="symbol symbol-50px">
                                                                 <span class="symbol-label"
-                                                                    style="{{ 'background-image:url(' . asset($item->product->avatar_url) . ');' }}"></span>
+                                                                    style="{{ 'background-image:url(' . asset($item->avatar_url) . ');' }}"></span>
                                                             </a>
                                                             <!--end::Thumbnail-->
                                                             <!--begin::Title-->
                                                             <div class="ms-5">
                                                                 <a href=""
                                                                     class="fw-bolder text-gray-600 text-hover-primary">
-                                                                    {{ $item->product->name }}
+                                                                    {{ $item->name }}
                                                                 </a>
-                                                                <div class="fs-7 text-muted">
-                                                                    {{ $item->color->value }}, {{ $item->size->value }}
-                                                                </div>
                                                             </div>
                                                             <!--end::Title-->
                                                         </div>
                                                     </td>
                                                     <!--end::Product-->
                                                     <!--begin::SKU-->
-                                                    <td class="text-end">{{ $item->product->id }}</td>
+                                                    <td class="text-end">{{ $item->id }}</td>
                                                     <!--end::SKU-->
                                                     <!--begin::Quantity-->
                                                     <td class="text-end">{{ $item->pivot->quantity }}</td>

@@ -97,6 +97,13 @@ class ProductController extends Controller
         $colors = $product->variants->pluck('color')->unique();
         $sizes = $product->variants->pluck('size')->unique();
 
+        $total = 0;
+        $ratingsCount = $product->ratings->count();
+        foreach ($product->ratings as $rating) {
+            $total += $rating->rating;
+        }
+        $product->rating_average = $ratingsCount > 0 ? ($total / $ratingsCount) : 0;
+
         return view('customer.product_detail', compact('product', 'sizes', 'colors'));
     }
 

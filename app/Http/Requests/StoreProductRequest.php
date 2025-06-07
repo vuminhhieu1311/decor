@@ -28,7 +28,7 @@ class StoreProductRequest extends FormRequest
             'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp',
             'status' => 'required',
             'price' => 'required|integer',
-            'brand_id' => 'required|integer',
+//            'brand_id' => 'required|integer',
         ];
     }
 

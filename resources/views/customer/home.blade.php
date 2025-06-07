@@ -42,10 +42,12 @@
                             <div id="category-desc-slider" class="product-flexslider hidden-buttons">
                                 <div class="slider-items slider-width-col1 owl-carousel owl-theme">
                                     <div class="item"> <a href="#"><img alt="New Special Collection"
-                                                src="{{ asset('banner5.jpeg') }}" style="height:400px;"></a>
+                                                src="{{ asset('banner1.webp') }}"></a>
                                     </div>
                                     <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner2.webp') }}" style="height:400px;"></a>
+                                                src="{{ asset('banner2.webp') }}"></a>
+                                    </div>
+                                    <div class="item"> <a href="#"><img alt="New Fashion" src="{{ asset('banner3.webp') }}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +67,7 @@
                                                     <a class="product-image"
                                                         href="{{ route('products.detail', ['product' => $product->id]) }}">
                                                         <img src="{{ asset($product->avatar_url) }}"
-                                                            style="height:300px;object-fit:contain;background:#f6f6f6;">
+                                                            style="object-fit:contain;background:#f6f6f6;">
                                                     </a>
                                                     <div class="new-label new-top-left">new</div>
                                                     <div class="sale-label sale-top-right">sale</div>
