@@ -7,7 +7,7 @@
                     <!-- Header Logo -->
                     <div class="logo">
                         <a title="ecommerce Template" href="{{ route('home') }}">
-                            <img style="height:40px;margin-left:40px;" src="{{ asset('logo.png') }}">
+                            <img style="height:30px;" src="{{ asset('logo.png') }}">
                         </a>
                     </div>
                     <!-- End Header Logo -->
@@ -15,7 +15,7 @@
                         <div class="mega-container visible-lg visible-md visible-sm">
                             <div class="navleft-container">
                                 <div class="mega-menu-title">
-                                    <h3>Shop quà lưu niệm</h3>
+                                    <h3>Shop bán xe máy</h3>
                                 </div>
                             </div>
                         </div>

@@ -42,19 +42,10 @@
                             <div id="category-desc-slider" class="product-flexslider hidden-buttons">
                                 <div class="slider-items slider-width-col1 owl-carousel owl-theme">
                                     <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner3.png') }}" style="height:350px;"></a>
+                                                src="{{ asset('banner1.jpg') }}"></a>
                                     </div>
                                     <div class="item"> <a href="#"><img alt="New Special Collection"
-                                                src="{{ asset('banner1.webp') }}" style="height:350px;"></a>
-                                    </div>
-                                    <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner2.png') }}" style="height:350px;"></a>
-                                    </div>
-                                    <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner4.png') }}" style="height:350px;"></a>
-                                    </div>
-                                    <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner5.png') }}" style="height:350px;"></a>
+                                                src="{{ asset('banner2.jpg') }}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +53,7 @@
                     </div>
                     <article class="col-main">
                         <div class="page-title">
-                            <h2>Clothing</h2>
+                            <h2>SẢN PHẨM NỔI BẬT</h2>
                         </div>
                         <div class="category-products">
                             @if($products->count())
@@ -183,16 +174,16 @@
                                         </li>
                                     </ol>
                                     <div class="carousel-inner">
-                                        <div class="item active"><img src="{{ asset('banner6.jpeg') }}" alt="New Arrivals">
+                                        <div class="item active"><img src="{{ asset('banner3.jpg') }}" alt="New Arrivals">
                                             <div class="carousel-caption">
                                                 <h3><a title=" Sample Product" href="#">New Arrivals</a>
                                                 </h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             </div>
                                         </div>
-                                        <div class="item"><img src="{{ asset('banner7.jpeg') }}" alt="Mid Season">
+                                        <div class="item"><img src="{{ asset('banner4.jpg') }}" alt="Mid Season">
                                             <div class="carousel-caption">
-                                                <h3><a title=" Sample Product" href="#">Top Fashion</a>
+                                                <h3><a title=" Sample Product" href="#">Top Choice</a>
                                                 </h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             </div>
