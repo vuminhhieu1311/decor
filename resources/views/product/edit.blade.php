@@ -310,7 +310,7 @@
                                                     </div>
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row w-100">
+                                                    {{-- <div class="fv-row w-100">
                                                         <!--begin::Label-->
                                                         <label
                                                             class="required form-label">{{ __('messages.size') }}</label>
@@ -325,7 +325,7 @@
                                                             @endforeach
                                                         </select>
                                                         <!--end::Input-->
-                                                    </div>
+                                                    </div> --}}
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
                                                     <div class="fv-row w-100">

@@ -70,7 +70,7 @@ class ProductController extends Controller
 
             foreach ($colors as $key => $color) {
                 $product->variants()->create([
-                    'size_id' => $sizes[$key],
+                    'size_id' => $sizes[$key] ?? 0,
                     'color_id' => $color,
                     'quantity' => $quantities[$key],
                 ]);
@@ -151,7 +151,7 @@ class ProductController extends Controller
 
             foreach ($colors as $key => $color) {
                 $product->variants()->create([
-                    'size_id' => $sizes[$key],
+                    'size_id' => $sizes[$key] ?? 0,
                     'color_id' => $color,
                     'quantity' => $quantities[$key],
                 ]);

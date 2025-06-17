@@ -25,7 +25,7 @@ class CartController extends Controller
     {
         $variant = ProductVariant::firstWhere([
             'product_id' => $product->id,
-            'size_id' => $request->size_id,
+            'size_id' => $request->size_id ?? 0,
             'color_id' => $request->color_id,
         ]);
 
@@ -43,7 +43,7 @@ class CartController extends Controller
             'weight' => 1,
             'options' => [
                 'avatar_url' => $product->avatar_url,
-                'size' => $variant->size->value,
+                'size' => $variant->size?->value ?? 0,
                 'color' => $variant->color->value,
                 'variant_id' => $variant->id,
             ],

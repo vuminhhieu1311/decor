@@ -133,7 +133,7 @@
                                     {!! $product->description !!}
                                 </div>
                                 <div class="add-to-box" style="border-bottom:none;">
-                                    <div style="display:flex;align-items:center;">
+                                    {{-- <div style="display:flex;align-items:center;">
                                         <div style="width:80px;">
                                             <h6 class="variant-label">{{ __('messages.size') }}:</h6>
                                         </div>
@@ -145,7 +145,7 @@
                                                 </label>
                                             @endforeach
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div style="display:flex;align-items:center;margin:10px 0;">
                                         <div style="width:80px;">
                                             <h6 class="variant-label">{{ __('messages.color') }}:</h6>
