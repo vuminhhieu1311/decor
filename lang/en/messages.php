@@ -7,7 +7,7 @@ return [
     'actions' => 'Actions',
     'name' => 'Name',
     'create_account' => 'Create an account',
-    'login_title' => 'Sign In to Ladie Dress',
+    'login_title' => 'Sign In to Dibao',
     'new_here' => 'New Here?',
     'password' => 'Password',
     'continue' => 'Continue',

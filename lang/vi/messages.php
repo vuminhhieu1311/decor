@@ -7,7 +7,7 @@ return [
     'actions' => 'Hành động',
     'name' => 'Tên',
     'create_account' => 'Tạo tài khoản',
-    'login_title' => 'Đăng nhập vào Ladie Dress',
+    'login_title' => 'Đăng nhập vào Dibao',
     'new_here' => 'Chưa có tài khoản?',
     'password' => 'Mật khẩu',
     'continue' => 'Tiếp tục',

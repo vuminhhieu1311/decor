@@ -35,7 +35,7 @@
                                                                 <div style="font-weight:600;font-size:14px;">
                                                                     {{ $item->name }}</div>
                                                                 <div style="font-style:italic;font-size:12px;">
-                                                                    {{ $item->options->color }}, {{ $item->options->size }}
+                                                                    {{ $item->options->color }}
                                                                 </div>
                                                             </div>
                                                         </td>
