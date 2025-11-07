@@ -133,7 +133,7 @@ class OrderController extends Controller
             Cart::destroy();
 
             alert()->success(__('messages.order_successfully'))
-                ->showConfirmButton('OK', '#FF7B54')->autoClose(5000);
+                ->showConfirmButton('OK', '#7367f0')->autoClose(5000);
 
             return redirect()->route('home');
         }
@@ -275,7 +275,7 @@ class OrderController extends Controller
 
             Cart::destroy();
             alert()->success(__('messages.order_successfully'))
-                ->showConfirmButton('OK', '#FF7B54')->autoClose(5000);
+                ->showConfirmButton('OK', '#7367f0')->autoClose(5000);
 
             return redirect()->route('home');
         }

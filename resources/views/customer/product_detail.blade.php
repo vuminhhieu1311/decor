@@ -24,8 +24,8 @@
         }
 
         label.radio-variant input:checked+span {
-            border-color: #FF7B54;
-            background-color: #FF7B54;
+            border-color: #7367f0;
+            background-color: #7367f0;
             color: #fff
         }
 
