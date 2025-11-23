@@ -42,10 +42,16 @@
                             <div id="category-desc-slider" class="product-flexslider hidden-buttons">
                                 <div class="slider-items slider-width-col1 owl-carousel owl-theme">
                                     <div class="item"> <a href="#"><img alt="New Fashion"
-                                                src="{{ asset('banner3.png') }}" style="height:350px;"></a>
+                                                src="{{ asset('banner1.avif') }}" style="height:350px;"></a>
                                     </div>
                                     <div class="item"> <a href="#"><img alt="New Special Collection"
-                                                src="{{ asset('banner1.webp') }}" style="height:350px;"></a>
+                                                src="{{ asset('banner2.avif') }}" style="height:350px;"></a>
+                                    </div>
+                                    <div class="item"> <a href="#"><img alt="New Fashion"
+                                        src="{{ asset('banner3.png') }}" style="height:350px;"></a>
+                                    </div>
+                                    <div class="item"> <a href="#"><img alt="New Fashion"
+                                        src="{{ asset('banner1.webp') }}" style="height:350px;"></a>
                                     </div>
                                     <div class="item"> <a href="#"><img alt="New Fashion"
                                                 src="{{ asset('banner2.png') }}" style="height:350px;"></a>
@@ -62,7 +68,7 @@
                     </div>
                     <article class="col-main">
                         <div class="page-title">
-                            <h2>Clothing</h2>
+                            <h2>Sản phẩm nổi bật</h2>
                         </div>
                         <div class="category-products">
                             @if($products->count())
