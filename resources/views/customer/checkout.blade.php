@@ -166,14 +166,7 @@
                                                                                             <label for="pay-toggle03">Thanh
                                                                                                 toán khi nhận hàng</label>
                                                                                         </div>
-                                                                                        <div class="pay-type">
-                                                                                            <input type="radio"
-                                                                                                id="pay-toggle04"
-                                                                                                name="pay_method"
-                                                                                                value="PAYPAL">
-                                                                                            <label for="pay-toggle04">Thanh
-                                                                                                toán qua Paypal</label>
-                                                                                        </div>
+                    
                                                                                     </div>
                                                                                     <div class="input-box"
                                                                                         style="margin-top:15px;">
