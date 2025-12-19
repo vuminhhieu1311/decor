@@ -122,11 +122,7 @@ class OrderController extends Controller
 
         // Thanh toán
         if ($request->pay_method === 'PAYPAL') {
-            try {
-                $this->paypalCheckout($order, $request);
-            } catch (Exception $e) {
-                Log::error($e);
-            }
+            // Làm sau
         } else {
             $order->is_active = true;
             $order->save();
@@ -226,66 +222,5 @@ class OrderController extends Controller
         }
 
         return redirect()->back()->with('success', __('messages.successfully'));
-    }
-
-    /**
-     * @throws Exception
-     */
-    public function paypalCheckout(Order $order, Request $request)
-    {
-        try {
-            $response = $this->gateway->purchase(array(
-                'amount' =>  round($order->total * 0.000041, 2),
-                'currency' => 'USD',
-                'returnUrl' => url('paypal-success'),
-                'cancelUrl' => url('paypal-error'),
-                'metadata' => array(
-                    'orderId' => $order->id,
-                ),
-            ))->send();
-
-            if ($response->isRedirect()) {
-                $order->payment_id = $response->getData()['id'];
-                $order->save();
-                $response->redirect();
-            }
-
-            toast('Có lỗi xảy ra. Vui lòng thử lại', 'error');
-            return redirect()->back();
-        } catch (Exception $e) {
-            Log::error($e);
-        }
-    }
-
-    public function paypalSuccess(Request $request)
-    {
-        if ($request->input('paymentId') && $request->input('PayerID')) {
-            $transaction = $this->gateway->completePurchase(array(
-                'payer_id' => $request->input('PayerID'),
-                'transactionReference' => $request->input('paymentId')
-            ));
-
-            $response = $transaction->send();
-
-            $paymentId = $response->getData()['id'];
-            Order::where('payment_id', $paymentId)->update([
-                'status' => OrderStatus::PAYPAL_PAID,
-                'is_active' => true,
-            ]);
-
-            Cart::destroy();
-            alert()->success(__('messages.order_successfully'))
-                ->showConfirmButton('OK', '#FF7B54')->autoClose(5000);
-
-            return redirect()->route('home');
-        }
-
-        toast('Có lỗi xảy ra. Vui lòng thử lại', 'error');
-        return redirect()->route('checkout');
-    }
-
-    public function paypalError()
-    {
-        return redirect()->route('checkout');
     }
 }
