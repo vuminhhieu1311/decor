@@ -36,11 +36,6 @@
     border: none;
 }
 
-.search-input-box::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
-}
-
 .search-input-box::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
 }
-
