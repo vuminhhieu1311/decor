@@ -33,13 +33,13 @@ $('.product-search-input').keyup(function (e) {
     urlParams.append('name', keyword);
 
     if (e.which === 13) {
-        window.location.href = `?${urlParams.toString()}`;
+        window.location.href = `/?${urlParams.toString()}`;
     }
 });
 
 $('.product-search-btn').on('click', (e) => {
     e.preventDefault();
-    window.location.href = `?${urlParams.toString()}`;
+    window.location.href = `/?${urlParams.toString()}`;
 });
 
 $(".lang-select").change(function () {
